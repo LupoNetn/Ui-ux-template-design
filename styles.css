@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span {
+    color: skyblue;
+}
+
+/* NAVBAR SECTION */
+
+.navbar-nav {
+    margin-left: 60%;
+}
+
+/* HERO SECTION */
+h1 {
+    font-size: 3rem;
+}
+.hero-section {
+    margin:10% auto 10% auto;
+    width: 50%;
+    text-align: center;
+}
+.hero-btn,.nav-btn {
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nav-btn:hover {
+    background-color: black;
+    color: white;
+}
+.hero-btn:hover {
+    background-color: black;
+    color: white;
+}
+.hero-section2 {
+    padding: 5% 5%;
+    background-color: lightgrey;
+    text-align: center;
+    margin: 5% auto 10% auto;
+}
+.hero-section2 p,h2 {
+    width: 60%;
+    margin-inline: auto;
+}
+.hero-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 7%;
+}
+.hero-flex-child {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 8%;
+    height: 150px;
+    width: 200px;
+}
+
+/* MAIN SECTION */
+img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+hr {
+    width: 15%;
+    border:1px solid yellow;
+}
+.main-flex-container {
+    padding: 5% 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+.main-text {
+    width: 50%;
+}
+/* PARTNERS SECTION */
+.partners {
+    background-color: lightgray;
+    padding: 5%;
+}
+.partners h4,hr {
+    margin-inline: auto;
+    text-align: center;
+}
+.partners-flex-container {
+    margin: 3% 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+}
+/* CTA */
+.cta hr {
+    margin-left: 0;
+    border: 1px solid black;
+}
+.cta h2 {
+    margin: 0 0 5% 0;
+}
+.cta a {
+    text-decoration: none;
+    color: black;
+}
+.cta a:hover {
+    color: grey;
+}
+.cta {
+    text-align: left;
+    background-color: lightyellow;
+    padding: 5% 5% 5% 15%;
+}
+/* FOOTER SECTION */
+.footer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3%;
+    padding: 8%;
+}
+.footer-item1 {
+    width: 25%;
+}
+.footer li {
+    list-style: none;
+}
+.footer a {
+    text-decoration: none;
+    color: grey;
+}
+.footer a:hover {
+    color: black;
+}
+.end {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width: 600px) and (min-width: 300px) {
+     /* NAVBAR SECTION */
+     .navbar-nav {
+        margin-left: 0;
+     }
+     /* HERO SECTION  */
+     .hero-section {
+        margin:10% auto 10% auto;
+        width: 80%;
+        text-align: center;
+    }
+    .hero-section2 p,h2 {
+        width: 100%;
+        margin-inline: auto;
+    }
+    .hero-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        margin-top: 7%;
+    }
+    .hero-flex-child {
+        margin: 2%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding-top: 14%;
+        height: 150px;
+        width: 200px;
+    }
+    /* MAIN SECTION */
+    .main-flex-container {
+        padding: 5% 10% 5% 10%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .main-img {
+        margin-left: 15%;
+        order: 1;
+    }
+    .main-text {
+        order: 2;
+    }
+    .main-text {
+        width: 100%;
+    }
+    /* PARTNERS SECTION */
+    .partners-flex-container {
+        margin: 3% 3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8%;
+    }
+    /* FOOTER SECTION */
+    .footer {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 3%;
+        padding: 8%;
+    }
+    .footer-item1 {
+        width: 100%;
+    }
+
+}
